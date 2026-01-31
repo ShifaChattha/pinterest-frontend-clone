@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="innernew.css">
+    <title>Product List</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="search">
+            <input type="text" placeholder="search">
+            <div class="icon1"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <a href="profile.html"><div class="profile"><i class="fa-regular fa-user"></i></div></a>
+    </div>
+
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <div class="pic"><img src="pinterest.png" alt="" height="35px"></div>
+        </a>
+        <a href="#" class="icon home"> <i class="fa-solid fa-house" style="color: #030303;"></i>
+        </a>
+        <a href="#" class="icon add"><i class="fa-regular fa-square-plus" style="color: #000000;"></i></a>
+        <a href="#" class="icon messages"><i class="fa-regular fa-bell" style="color: #0a0a0b;"></i>
+            <span class="badge">99+</span>
+        </a>
+        <a href="#" class="icon chat"><i class="fa-solid fa-comment-dots" style="color: #030408;"></i></a>
+        <a href="#" class="icon settings"><i class="fa-solid fa-gear" style="color: #030408;"></i></a>
+    </div>
+
+    <div id="product-list"></div>
+    <br>
+    <script>
+        const productList = document.getElementById('product-list');
+
+        // Load XML file
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'inner.xml', true);
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const xml = xhr.responseXML;
+                const products = xml.getElementsByTagName('product');
+
+                // Clear the previous content
+                productList.innerHTML = '';
+
+                for (let i = 0; i < products.length; i++) {
+                    const productImage = products[i].getElementsByTagName('image')[0].textContent;
+
+                    const productHTML = `
+                        <div class="cards">
+                            <img src="${productImage}" alt="Product Image">
+                            <button class="save-button" onclick="saveImage('${productImage}')">Save</button>
+                        </div>
+                    `;
+
+                    productList.insertAdjacentHTML('beforeend', productHTML);
+                }
+            }
+        };
+        xhr.send();
+
+        // Function to add items to local storage
+        function saveImage(image) {
+            let savedImages = localStorage.getItem('savedImages');
+            if (savedImages) {
+                savedImages = JSON.parse(savedImages);
+            } else {
+                savedImages = [];
+            }
+            savedImages.push(image);
+            localStorage.setItem('savedImages', JSON.stringify(savedImages));
+            alert("Image has been saved.");
+        }
+    </script>
+</body>
+
+</html>

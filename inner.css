@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+.sidebar {
+    top:0;
+    width: 60px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    margin-right: 20px;
+}
+.navbar{
+    display:flex; 
+    margin-top: 20px;
+    margin-left: 100px;
+
+}
+.navbar input{
+    height:35px;
+    padding-left:30px;
+    width:1000px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    position: relative;
+}
+.icon1{
+    padding-left: 10px;
+    top:27px;
+    position: absolute;
+    
+}
+.profile{
+    margin-left: 20px;
+    font-size: 22px;
+    margin-top:5px ;
+}
+.navbar1 {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    margin-top: 20px;
+    padding:10px 0px;
+    margin-left:50px;
+    width: calc(100% - 100px); 
+    background-color: #f2f2f2;
+    display: none;
+
+
+}
+.icon3{
+    margin-top: 5px;
+}
+.home2 {
+    
+    margin-top:10px;
+    font-size:20px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.chat2 {
+    margin-top:10px;
+    font-size:20px;
+    font-weight: bold;
+    padding-left:10px
+}
+.home {
+    
+    margin-top:30px;
+    font-size:20px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.add {
+    margin-top:30px;
+    font-size:20px;
+    font-weight: bold;
+    padding-left:10px;
+}
+
+.messages {
+    position: relative;
+    margin-top:30px;
+    font-size:20px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.chat {
+    margin-top:30px;
+    font-size:20px;
+    font-weight: bold;
+    padding-left:10px
+}
+
+.settings {
+     margin-top:250px;
+    font-size:20px;
+    font-weight: bold;
+    padding-left:10p
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius:50%;
+}
+#product-list {
+    margin-top:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.cards {
+    /* border: 1px solid #ccc; */
+    /* border-radius: 10px; */
+    padding:10px;
+    margin: 10px;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1  250px;
+    max-width: 250px;
+    box-sizing: border-box;
+
+}
+@media (max-width:600px) { 
+     #product-list {
+        margin-left:50px; /* Adjust margin-left accordingly */
+    }
+
+    .cards {
+        flex: 1 1 50%; /* Full width for cards on small screens */
+        max-width:none; /* Remove max-width constraint */
+        margin: 5px; /* Adjust margin for better spacing */
+    }
+}
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.save-button {
+    display: none;
+    position: absolute;
+    top:20px;
+    right:20px;
+    background-color:#E60023;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius:50px;
+    cursor: pointer;
+}
+.cards:hover .save-button {
+    display:block;
+}
+@media (max-width:600px) {
+    .cards {
+        margin: 8px;
+        padding: 8px;
+    }
+    .save-button {
+        padding: 5px;
+    }
+}
+@media (max-width:1000px){
+    .sidebar{
+        display: none;
+    }
+    .navbar1{
+        display:flex;
+    }
+    .navbar{
+        display: none;
+    }
+}

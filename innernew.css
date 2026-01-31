@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.sidebar {
+    top: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: calc(100% - 100px); /* Adjust width to fit with the sidebar */
+}
+
+.navbar input {
+    height: 35px;
+    padding-left: 30px;
+    width: 100%; /* Adjust width to take full available space */
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.icon1 {
+    padding-left: 10px;
+    top: 27px;
+    position: absolute;
+}
+
+.profile {
+    margin-left: 20px;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        margin-left: 60px;
+        margin-top: 10px;
+        width: calc(100% - 70px); /* Adjust width for smaller screens */
+    }
+
+    .navbar input {
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .icon1 {
+        display: none;
+    }
+
+    .profile {
+        margin-left: 30px;
+    }
+}
+
+.home {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.add {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.messages {
+    position: relative;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.chat {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.settings {
+    margin-top: 250px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+#product-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.cards {
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 250px;
+    max-width: 250px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    #product-list {
+        margin-left: 50px;
+    }
+
+    .cards {
+        flex: 1 1 100%;
+        max-width: none;
+        margin: 5px;
+    }
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.save-button {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #E60023;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.cards:hover .save-button {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .cards {
+        margin: 8px;
+        padding: 8px;
+    }
+
+    .save-button {
+        padding: 5px;
+}
+}

@@ -1,0 +1,173 @@
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0; 
+    padding: 0; 
+     background-color: #f7f7f7; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    /* heigh:50%; */
+    background-image: url("newsroom-site_luxuryreport_pingrid-1080x567.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+label{
+    font-weight:450;
+}
+.login-container {
+    overflow-y: hidden;
+    width: 100%;  
+    max-width: 500px;
+    padding:0px;
+   
+}
+
+.login-box {
+    height:600px;
+    margin-top:0px;
+    background: #fff;
+      padding-top:10px; 
+     padding-left: 40px;
+    padding-right: 40px;
+    /* border-radius: 50px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* .forgot-password {
+    display: block;
+    font-size:14px;
+    margin: 10px 0;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+} */
+
+.login-btn {
+    width: 80%;
+    padding: 10px;
+    background-color: #e60023;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* .divider {
+    align-items: center;
+    justify-content: center;
+}
+
+.divider span {
+    font-size: 14px;
+    font-weight: bold;
+
+}
+ */
+
+.social-btn {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    height:40px;
+}
+.gbtn{
+    margin-right: 30px;
+
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.google {
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #ddd;
+}
+
+.signup {
+font-size: 14px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.signup a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.terms {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #666;
+}
+
+.terms a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold ;
+}
+.terms a:hover{
+    text-decoration:underline;
+}
+/* .lasti{
+    padding-top: 10px;
+    font-size:16px;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    background-color:whitesmoke;
+    border-radius: 0px 0px 30px 30px;
+}
+.lasti a{
+    text-decoration: none;
+    color: black;
+} */
+.btn-close{
+    margin-left:330px;
+    border-radius: 50%;
+}
+.btn-close:hover{
+    background-color:lightgrey;
+}
+.btn-close:active{
+    text-decoration:none;
+
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        padding: 20px 20px 20px 0px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    form input, .login-btn, .social-btn {
+        font-size:14px;
+}
+}
+

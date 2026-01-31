@@ -1,0 +1,220 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.heading {
+    margin-top: 70px;
+    font-size: 36px;
+
+}
+
+.heading1 {
+    margin-top: 50px;
+    font-size: 28px;
+    margin-bottom: 20px;
+
+}
+
+.p1 {
+    background-image: url("wedding.jpg");
+
+}
+
+.p2 {
+    background-image: url("tatto.jpg");
+
+
+}
+
+.p3 {
+    background-image: url("sofa.jpg");
+
+}
+
+.p4 {
+    background-image: url("travel.jpg");
+
+
+}
+
+.p5 {
+    background-image: url("girl.jpg");
+}
+
+.p6 {
+    background-image: url("garden.jpg");
+}
+
+.p7 {
+    background-image: url("boy.jpg");
+
+}
+
+.p8 {
+    background-image: url("dog.jpg");
+
+}
+
+.p9 {
+    background-image: url("food.jpg");
+
+}
+
+.p10 {
+    background-image: url("cup.jpeg");
+}
+
+.p11 {
+    background-image: url("design.jpg");
+}
+
+.p12 {
+    background-image: url("fashion.jpg");
+
+}
+
+.p13 {
+    background-image: url("craft.jpg");
+
+}
+
+.p14 {
+    background-image: url("bear.jpg");
+}
+
+
+
+.bpic {
+    height: 120px;
+    width: 250px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+
+
+}
+.bpic a{
+    color: white;
+}
+.bpic a:hover{
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+.hide1{
+    display: none;
+}
+
+.butdiv {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pbut1 {
+    top: 0;
+    width: 100px;
+    height: 48px;
+    border: none;
+    font-weight: bold;
+    border-radius: 40px;
+    text-align: center;
+    background-color: #e2e2e2;
+    margin-bottom: 80px;
+}
+.pbut1 a{
+    text-decoration: none;
+    color: black;
+}
+.pbut1 a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.inp1 {
+    padding-top:5px;
+    padding-left:30px;
+    border: none;
+    background-color: #e2e2e2;
+    height: 40px;
+    width: 200px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
+.inp2 {
+    padding-top:5px;
+    padding-left: 30px;
+    border: none;
+    background-color: #e2e2e2;
+    height: 40px;
+    width: 180px;
+    border-radius: 50px;
+    margin-bottom:10px;
+    margin-right: 10px;
+
+
+
+}
+.inp2 a{
+    text-decoration: none;
+    color: black;
+}
+.inp2 a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.inp3 {
+    padding-top:6px;
+    padding-left: 30px;
+    border: none;
+    margin-right:10px;
+
+    background-color: #e2e2e2;
+    height: 40px;
+    width: 190px;
+    border-radius: 50px;
+    margin-bottom:10px;
+
+}
+
+.inp3 a{
+    text-decoration: none;
+    color: black;
+
+}
+.inp3 a:hover{
+    text-decoration: none;
+    color: black;
+
+}
+
+.inpi {
+    margin-top: 10px;
+
+}
+.inp1 a{
+    text-decoration: none;
+    color: black;
+}
+.inp1 a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+::placeholder {
+    color: black;
+}

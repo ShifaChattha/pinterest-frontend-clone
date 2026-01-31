@@ -1,0 +1,50 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footertxt{
+    margin-top: 100px;
+    font-size: 36px;
+     font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+   font-weight:bolder; 
+  font-style: normal;
+
+
+}
+#selectlang{
+    padding-left:10px;
+    font-weight:600;
+    width: 185px;
+    height:35px;
+    margin-top:25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+
+}
+
+.flinkh {
+    margin-top:100px ;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.flink {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+
+}
